@@ -1,0 +1,100 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-content {
+  padding-top: 20px;
+  font-size: large;
+}
+
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.malename {
+  width: 11.875rem; /* 190px; */
+  padding: 0.1rem;
+}
+
+.malename::before {
+  font-size: 2.25rem; /* 36px; */
+  content: "\2642\1F466";
+}
+
+.femalename {
+  width: 11.875rem; /* 190px; */
+  padding: 0.1rem;
+}
+
+.femalename::before {
+  font-size: 2.25rem; /* 36px; */
+  content: "\2640\1F467";
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem; /* 20px; */
+  margin: 1.2rem;
+}
+
+.rightflex {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+.searchbar {
+  margin: 0.2rem;
+  font-size: 1.25rem; /* 20px; */
+}
+
+/* Home Button */
+
+.btn {
+  background-color: var(--DodgerBlue);
+  border: none;
+  color: var(--white);
+  margin-top: 0.375em; /* 6px; */
+  padding: 0.75em 1em; /* 12px 16px; */
+  font-size: 1.75em; /* 28px; */
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: var(--RoyalBlue);
+}
+
+.select-and-search {
+  font-size: 1.4em;
+  margin: 4em 0em;
+  display: flex;
+  justify-content: space-around;
+}
