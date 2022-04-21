@@ -47,6 +47,7 @@ const App = () => {
         <input
           className="searchbar"
           type="text"
+          autoComplete="off"
           id="children-query"
           name="q"
           placeholder="Children Names Search"

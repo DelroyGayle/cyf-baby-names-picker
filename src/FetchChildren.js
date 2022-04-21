@@ -21,7 +21,6 @@ import DisplayChild from "./DisplayChild.js";
   Note: ChildrenNames is a 'const' variable containing the relevant names data
 */
 const FetchChildren = (props) => {
-
   return (
     <div className="flex-container">
       {props.theChildren.map((child, index) => {
