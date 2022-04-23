@@ -21,9 +21,10 @@ import DisplayChild from "./DisplayChild.js";
   Note: ChildrenNames is a 'const' variable containing the relevant names data
 */
 const FetchChildren = (props) => {
+  let listOfChildren = props.theChildren.sort(nameCompare);
   return (
     <div className="flex-container">
-      {props.theChildren.map((child, index) => {
+      {listOfChildren.map((child, index) => {
         let theClassName = child.gender === "m" ? "malename" : "femalename";
 
         return (
@@ -33,11 +34,17 @@ const FetchChildren = (props) => {
             childGender={child.gender}
             theClassName={theClassName}
             theIndex={index}
+            handleClick={props.handleClick}
           />
         );
       })}
     </div>
   );
 };
+
+
+function nameCompare(a, b) {
+  return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+}
 
 export default FetchChildren;
