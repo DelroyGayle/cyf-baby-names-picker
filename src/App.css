@@ -1,3 +1,8 @@
+:root {
+  --DodgerBlue: #1e90ff;
+  --goldenrod: #daa520;
+}
+
 .App {
   text-align: left;
 }
@@ -74,6 +79,17 @@
 .searchbar {
   margin: 0.2rem;
   font-size: 1.25rem; /* 20px; */
+  border: 0.125rem solid var(--goldenrod);
+  padding-left: 0.1rem;
+}
+
+input[type="text"]:focus {
+  border: 0.125rem solid var(--goldenrod);
+}
+
+input:active,
+input:focus {
+  outline-color: var(--goldenrod);
 }
 
 .aborder {
@@ -82,7 +98,7 @@
 }
 
 .genderbutton {
-  background-color: goldenrod;
+  background-color: var(--goldenrod);
   border: none;
   color: black;
   padding: 1.25rem; /* 20px; */
@@ -104,5 +120,5 @@
 }
 
 .bluetext {
-  color: #1e90ff; /* DodgerBlue */
+  color: var(--DodgerBlue);
 }
