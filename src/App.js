@@ -69,14 +69,14 @@ const App = () => {
       } else {
         filteredList = theNameList.filter(
           (element) =>
-            element.gender === searchGender &&
-            element.name.toLowerCase().includes(enteredString.toLowerCase())
+            element.gender === searchGender
+            && element.name.toLowerCase().includes(enteredString.toLowerCase())
         );
       }
     } else {
       // enteredString === ""
-      filteredList =
-        searchGender === "all"
+      filteredList
+        = searchGender === "all"
           ? theNameList
           : theNameList.filter((element) => element.gender === searchGender);
     }
@@ -160,8 +160,8 @@ const App = () => {
     }
   }
 
-  let message =
-    searchGender === "all"
+  let message
+    = searchGender === "all"
       ? "All Names"
       : searchGender === "m"
       ? "All Male Names"
