@@ -83,10 +83,6 @@
   padding-left: 0.1rem;
 }
 
-input[type="text"]:focus {
-  border: 0.125rem solid var(--goldenrod);
-}
-
 input:active,
 input:focus {
   outline-color: var(--goldenrod);
